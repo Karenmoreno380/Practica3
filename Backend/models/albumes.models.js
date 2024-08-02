@@ -1,8 +1,4 @@
-import {albumes } from '../Controllers/albumes.controllers.js'
+import { esquema } from "./Artistas.models.js"
+import { model } from "mongoose"
 
-export const test2 = ()=>{
-    console.log ('Funciona el controlador de album')
-}
-albumes .create({
-    name:"lp la isla"
-})
+export const modeloalbumes = new model('albumes',esquema)

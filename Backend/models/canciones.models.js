@@ -1,8 +1,5 @@
-import {canciones } from '../Controllers/canciones.controller.js'
+import { esquema } from "./Artistas.models.js";
+import { model } from "mongoose"
 
-export const test3 = ()=>{
-    console.log ('Funciona el controlador de la cancion')
-}
-canciones .create({
-    name:"la ultima cancion"
-})
+
+export const canciones = new model('canciones', esquema)

@@ -1,4 +1,9 @@
-import {esquema} from '../models/genero.models.js';
-import {model} from 'mongoose'
+import { colab } from '../models/colab.models.js'
 
-export const modelogenero = new model('genero',esquema)
+export const test = ()=>{
+    console.log ('Funciona el controlador de artistas')
+}
+
+colab.create({
+    name:"Rels B"
+})

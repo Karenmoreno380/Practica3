@@ -1,8 +1,3 @@
-import {colab } from '../Controllers/colab.controller.js'
+import { esquema } from "./genero.models.js";
 
-export const test4 = ()=>{
-    console.log ('Funciona el controlador de la colab')
-}
-colab .create({
-    name:"Junior h"
-})
+export const colab = new model('colab', esquema)
